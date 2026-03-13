@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><!-- VSTags Header -->
+
+
+<script src="IME-files/custom.js" type="text/javascript"></script>
+
+
+<div id="body"><script language="javascript" src="IME-files/data-utf.js"></script>
+<script language="javascript" src="IME-files/ime.js"></script>
+<style>.line {margin:5px 0px}</style>
+
+<form id="ime">
+<div class="border">
+<table onfocus="IME.InputArea.focus()"><tbody>
+<tr><td rowspan="2" valign="top">
+
+ <textarea onkeydown="return ImeKeyDown(event)" onkeypress="return ImeKeyPress(event)" onkeyup="return ImeKeyUp(event)" rows="13" cols="60" style="width:460px; height:280px; font-size: 12pt; font-family: simsun,mssong,mingliu,arial" id="InputArea"></textarea>
+
+</td><td>
+
+<input onfocus="IME.InputArea.focus();" name="Comp" id="Comp" size="21" style="width:150px; font-size: 12pt; font-family: arial,simsun,mssong,mingliu; background-color:#eee">
+
+</td></tr><tr><td>
+
+<textarea onfocus="IME.InputArea.focus();" name="Cand" id="Cand" rows="11" cols="20" style="width:150px; height:250px; font-size: 12pt; font-family: simsun,mssong,mingliu,arial; background-color:#eee"></textarea>
+
+</td></tr></tbody></table>
+<input name="EnglishMode" id="EnglishMode" type="checkbox" onfocus="IME.InputArea.focus()"> Toggle for English
+<input name="FullShape" id="FullShape" type="checkbox" onfocus="IME.InputArea.focus()" style="visibility : hidden">
+<input name="AutoUp" id="AutoUp" type="checkbox" onfocus="IME.InputArea.focus()" style="visibility : hidden">
+</div>
+</form>
+
+<script type="text/javascript">window.onload=function() { document.forms['ime'].elements['InputArea'].focus(); }</script>
+
+<script language="javascript">BodyOnLoad();</script>
+
+</div>
+</body></html>
